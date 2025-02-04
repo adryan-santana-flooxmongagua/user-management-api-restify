@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "consign": "^0.1.6",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "nedb": "^1.8.0"
+  }
+}
