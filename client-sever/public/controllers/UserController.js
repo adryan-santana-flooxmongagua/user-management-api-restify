@@ -14,7 +14,7 @@ class UserController {
 
     onEdit(){
 
-        document.querySelector("#box-user-update .btn-cancel").addEventListener("click", e=>{
+        document.querySelector("#box-user-update .btn-cancel").addEventListener("click", e =>{ 
 
             this.showPanelCreate();
 
@@ -203,9 +203,7 @@ class UserController {
 
     selectAll(){
 
-        
-
-        User.getUsersStorage().then().then(data => {
+        User.getUsersStorage().then(data => {
 
             data.users.forEach(dataUser => {
 
@@ -265,7 +263,7 @@ class UserController {
 
                 user.loadFromJSON(JSON.parse(tr.dataset.user));
 
-                user.remove().then(data=>{
+                user.remove().then(data => {
 
                     tr.remove();
 
